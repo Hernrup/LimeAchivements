@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head>        
+<title>LimeArchivements</title>	
+<meta name="DESCRIPTION" content="LimeArchivements" />	
+<meta name="KEYWORDS" content="LimeArchivements" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="ROBOTS" content="INDEX, FOLLOW" />	
+<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+<link href="./css/style.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="./css/jquerytools.css" media="screen" rel="stylesheet" type="text/css" />	  
+
+</head> 
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                
+                <div id="navigation">
+<!--                    <a id="home" href="#">Översikt</a>-->
+                    <span>Visa: </span>
+                    <select id="userselect">
+                        <option value=""></option>
+                    </select>
+                    </div>
+                <div id="logo"></div>
+            </div>
+            <div id="content">
+
+
+            </div>
+            <div id="footer">
+
+            </div>
+        </div>
+        
+        <div id="bottom">
+            
+        </div>
+        
+        <script type="text/javascript" src="./js/lib/jquery-1.7.1.min.js"></script>
+        <!--<script type="text/javascript" src="./js/lib/jquery-ui-1.7.2.custom.min.js"></script>-->
+        <script type="text/javascript" src="./js/lib/jquery.tools.min.js"></script>
+        <script type="text/javascript" src="./js/lib/jquery.xml2json.js"></script>
+        <script type="text/javascript" src="./js/custom/UI.js"></script>
+        <script type="text/javascript" src="./js/custom/commons.js"></script>
+        <script type="text/javascript" src="./js/custom/achivements.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $.ajaxSetup({cache:false});
+                UI.setPageFromUrl();
+            });
+            
+            $("#userselect").change(function(){
+                UI.setProfilePageFromId($("#userselect option:selected").val());
+            })
+            
+             $("#home").click(function(){
+                 UI.setStartPage();
+                 return false;
+            })
+
+            $(document).ready(function() {
+//                   var json = '[{"name":"John","id":"1"},{"name":"Kalle","id":"2"}]';
+                    
+//                    this.users = jQuery.parseJSON(json.toString());
+//                    console.log(this.users);
+                    
+            });
+         
+        </script>
+    </body>
+</html>

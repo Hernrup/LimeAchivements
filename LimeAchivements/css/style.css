@@ -1,0 +1,173 @@
+/****************************
+DEFAULTS
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+/*margin: 0;
+padding: 0;*/
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+}
+/****************************
+MAIN
+*/
+html{
+    margin: 0px;
+}
+body{
+    text-align: center;
+    margin: 0px;
+    font: 14px "Trebuchet MS", Tahoma, sans-serif;
+    color: #545454;
+    background: #FFF url("../img/lime_bg_smal.png") top center repeat-x;
+}
+div#header{
+    margin-top: 10px;
+}
+div#footer{
+    height: 60px;
+}
+div#bottom{
+    background: #E2F1FF url("../img/footer-bg.gif") top left repeat-x;
+    height: 150px;
+}
+div#wrapper{
+    text-align: left;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div{
+    padding: 0px;
+}
+h1,h2,h3,h4,h5{
+    clear: both;
+}
+a {
+color: #0B6FAE;
+text-decoration: none;
+}
+a:-webkit-any-link {
+color: -webkit-link;
+text-decoration: underline;
+cursor: auto;
+}
+p {
+margin: 0 0 20px 0;
+font-size: 14px;
+line-height: 25px;
+}
+h1 {
+font-size: 1.7em;
+font-weight: bold;
+}
+h2 {
+font-size: 1.5em;
+font-weight: bold;
+}
+th{
+    background: #86b720;
+    color: #FFF;
+    padding: 5px;
+    font-weight: bold;
+}
+td{
+    padding: 2px 5px;
+}
+/****************************
+HEADER
+*/
+div#header{
+    padding: 10px 0;
+}
+div#logo{
+   background: transparent url("../img/LIME_Achievements_logo2.png") top left no-repeat;
+   height: 80px;
+   width: 700px;
+}
+div#navigation{
+    float: right;
+    margin-top: 20px;
+    color: #FFF;
+}
+select#userselect{
+    width: 200px;
+    color: #333;
+    padding: 5px;
+}
+/****************************
+OVERVIEW
+*/
+div#leader{
+    margin-top: 40px;
+}
+div#leader img{
+    float: left;
+}
+div#leader > div{
+    float: left;
+    margin: 0px 0 0 50px; 
+}
+div#leader #leaderName{
+    margin: 10px 0 0 0;
+}
+div#latestAchievements{
+    margin-top: 20px;
+}
+div#details{
+    margin: 20px 0 0 0;
+}
+table#highscore{
+    width: 100%;
+}
+table#highscore th{
+    font-weight: bold;
+}
+/***************************
+PROFILE
+*/
+
+div#profile{
+    margin-top: 30px;
+}
+
+
+/***************************
+COMMONS
+*/
+div.achievementBadge{
+    width: 337px;
+    height: 100px;
+    border: 0px solid #000;
+    float: left;
+    margin: 0 10px 10px 0;
+    background: url("../img/achievement_bg_gold_2.png") left bottom no-repeat transparent;
+    cursor: pointer;
+    display: block;
+}
+div.achievementBadgeSquare{
+    border: 0px solid #000;
+    float: left;
+    margin: 0 10px 10px 0;
+    background: url("../img/achievement_bg_square_gold.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 170px;
+    width: 144px;
+    text-align: center;
+}
+div.achievementBadgeSquare span.title{
+    margin-top: 115px;
+    display: block;
+    text-transform: uppercase;
+/*    font-weight: bold;*/
+    padding: 3px;
+}
+.clear{
+    clear: both;
+}

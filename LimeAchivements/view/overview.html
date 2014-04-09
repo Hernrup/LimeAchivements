@@ -1,0 +1,43 @@
+<br class="clear" />
+
+<div id="leader" class="clear">
+    <img src="img/coin_gold.png" />
+    <div class="">
+        <h2 id="leaderName">Kalle</h2>
+        <p><span id="leaderPoints">1500</span> poäng</p>
+    </div>
+</div>
+
+<br class="clear" />
+
+<div id="latestAchievements" class="clear">
+    <h2>Latest Achievements</h2>
+    <br class="clear" />
+    <a class="prev browse left"></a>
+    <a class="next browse right"></a>
+
+    <div class="scrollable">   
+        <div class="items" id="latestAchievementItems">
+
+            <div id="latestAchievementItems_set1"></div>
+            <div id="latestAchievementItems_set2"></div>
+            <div id="latestAchievementItems_set3"></div>
+            <div id="latestAchievementItems_set4"></div>
+          
+        </div>
+    </div>
+    
+</div>
+
+<div id="details" class="clear">
+    <h2>High score</h2>
+    <table id="highscore">
+        <tr><th></th><th>Namn</th><th>Poäng</th></tr>
+    </table>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+            $(".scrollable").scrollable();
+    });
+</script>
